@@ -49,6 +49,96 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg
+              fill="black"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+    
+          <ul class="nav-list list">
+            <li>
+              <a class="active-menu link" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="menu-contacts">
+          <ul class="contact-info list">
+            <li>
+              <a class="link number" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a class="link email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          
+          </ul>
+          <ul class="socmed-team-menu">
+            <li class="social-list">
+              <a href="" class="social-link link">
+                <svg width="16" height="16" class="sec-four-icons">
+                  <use href="./images/icons.svg#insta-socmed" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="" class="social-link link">
+                <svg width="16" height="16" class="sec-four-icons">
+                  <use href="./images/icons.svg#twitter-socmed" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="" class="social-link link">
+                <svg width="16" height="16" class="sec-four-icons">
+                  <use href="./images/icons.svg#face-socmed" />
+                </svg>
+              </a>
+            </li>
+            <li class="social-list">
+              <a href="" class="social-link link">
+                <svg width="16" height="16" class="sec-four-icons">
+                  <use href="./images/icons.svg#linked-socmed" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+        </div>
       </div>
     </header>
     <main>
@@ -142,8 +232,8 @@
             <li class="sec-four-item">
               <img src="./images/mark.jpg" alt="Person" width="264" />
               <div class="employees">
-                <h3 class="sec-two-header">Mark Guerrero</h3>
-                <p class="sec-two-par">Product Designer</p>
+                <h3 class="sec-four-header">Mark Guerrero</h3>
+                <p class="sec-four-par">Product Designer</p>
                 <ul class="socmed-team">
                   <li class="social-list">
                     <a href="" class="social-link link">
@@ -179,8 +269,8 @@
             <li class="sec-four-item">
               <img src="./images/tom.jpg" alt="Person" width="264" />
               <div class="employees">
-                <h3 class="sec-two-header">Tom Ford</h3>
-                <p class="sec-two-par">Frontend Developer</p>
+                <h3 class="sec-four-header">Tom Ford</h3>
+                <p class="sec-four-par">Frontend Developer</p>
                 <ul class="socmed-team">
                   <li class="social-list">
                     <a href="" class="social-link link">
@@ -216,8 +306,8 @@
             <li class="sec-four-item">
               <img src="./images/camila.jpg" alt="Person" width="264" />
               <div class="employees">
-                <h3 class="sec-two-header">Camila Garcia</h3>
-                <p class="sec-two-par">Marketing</p>
+                <h3 class="sec-four-header">Camila Garcia</h3>
+                <p class="sec-four-par">Marketing</p>
                 <ul class="socmed-team">
                   <li class="social-list">
                     <a href="" class="social-link link">
@@ -253,8 +343,8 @@
             <li class="sec-four-item">
               <img src="./images/daniel.jpg" alt="Person" width="264" />
               <div class="employees">
-                <h3 class="sec-two-header">Daniel Wilson</h3>
-                <p class="sec-two-par">UI Designer</p>
+                <h3 class="sec-four-header">Daniel Wilson</h3>
+                <p class="sec-four-par">UI Designer</p>
                 <ul class="socmed-team">
                   <li class="social-list">
                     <a href="" class="social-link link">
@@ -490,6 +580,13 @@
         <!-- </div> -->
       </div>
     </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
