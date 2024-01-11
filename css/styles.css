@@ -1000,10 +1000,10 @@ letter-spacing: 0.32px;
   opacity: 0;
 }
 }
-.menu-toggle:hover,
+/* .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
-}
+} */
 
 .menu-container {
   position: fixed;
