@@ -775,6 +775,16 @@ line-height: 24px; /* 120% */
 letter-spacing: 0.4px;
 margin-bottom: 8px;
 }
+.sec-two-porfolio-header{
+  color: var(--nav-color);
+  font-family: "Roboto";
+  font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 120% */
+letter-spacing: 0.4px;
+}
+
 @media only screen and (max-width: 767px){
   .menu {
     display: none;
@@ -885,6 +895,15 @@ max-width: 271px;
 }
 }
 @media (max-width: 428px) {
+  .menu-list {
+    flex-wrap: wrap;
+    padding-left: 0;
+    row-gap: 16px;
+    justify-content: start;
+  }
+  .port-btn{
+    padding:  8px 16px;
+  }
   .navigation .nav-list
  {
     display: none;
@@ -1069,6 +1088,9 @@ letter-spacing: 0.32px;
   bottom: -1px;
   left: 0;
   opacity: 0;
+}
+.product-item{
+  width: 100%;
 }
 }
 /* .menu-toggle:hover,
