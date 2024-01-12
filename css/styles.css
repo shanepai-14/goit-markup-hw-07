@@ -808,12 +808,83 @@ margin-bottom: 8px;
   outline: none;
 
 }
-@media (min-width: 768px) {
+@media (min-width: 428px) {
   .menu-toggle {
     display: none;
   }
+
 }
-@media only screen and (max-width: 428px) {
+@media  (max-width: 768px){
+
+
+.contacts .list {
+  flex-direction: column;
+  gap:12px;
+}
+.contact-info .link{
+  font-size: 12px;
+  font-weight: 400;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.48px;
+}
+.section-two .list {
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.section-two .sec-two-list {
+  width: calc((100% - 24px) / 2);
+}
+.sec-two-icon{
+  display: none;
+}
+.sec-two-header {
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.section-three{
+  display: none;
+}
+.section-four .list {
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.sec-four-item {
+  width:auto;
+  margin: 0;
+}
+.client-list {
+  width: calc((100% - 120px) / 3);
+  margin: 0;
+ 
+}
+.client-lists {
+  row-gap: 72px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer .container{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer-logo {
+  margin-right: 0;
+}
+.footer p{
+margin-right: 24px;
+max-width: 271px;
+}
+.subscribe{
+  margin-top: 72px;
+}
+}
+@media (max-width: 428px) {
   .navigation .nav-list
  {
     display: none;
