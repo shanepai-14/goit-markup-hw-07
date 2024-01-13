@@ -129,6 +129,7 @@ body {
   background-position: center;
   background-size: cover;
 }
+
 .hero .hero-header {
   font-size: 56px;
   text-align: center;
@@ -214,6 +215,7 @@ body {
   font-weight: 400;
   font-style: normal;
   margin-left: 0;
+  margin-right: 0;
 }
 .footer-social {
   display: flex;
@@ -340,6 +342,14 @@ body {
 }
 img {
   display: block;
+  width: 100%;
+ 
+  height: auto;
+}
+.image-container img{
+  object-fit: cover;
+  margin-left: 0;
+  margin-right: 0;
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -719,9 +729,9 @@ img {
 }
 .subscribe-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
-}
-.sub-form-input {
+}i
   width: 264px;
   height: 40px;
   border: 1px solid var(--title-color);
@@ -783,6 +793,13 @@ font-style: normal;
 font-weight: 500;
 line-height: 24px; /* 120% */
 letter-spacing: 0.4px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero{
+        background-image: linear-gradient( to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7) ), url(../images/hero-bg.jpg);
+    }
 }
 
 @media only screen and (max-width: 767px){
