@@ -731,7 +731,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-}i
+}
+.sub-form-input {
   width: 264px;
   height: 40px;
   border: 1px solid var(--title-color);
